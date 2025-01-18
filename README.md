@@ -50,3 +50,11 @@ AluraFlix es una aplicación web desarrollada en React que permite gestionar y v
    - Retroalimentación visual para acciones del usuario
    - Transiciones fluidas entre secciones
    - Diseño centrado en la accesibilidad
+
+## 🙏 Agradecimientos
+- Alura Latam
+- Oracle Next Education
+
+---
+Creado con ❤️ por Micaela Roig Courtis
+
