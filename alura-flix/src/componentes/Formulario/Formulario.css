@@ -1,0 +1,23 @@
+.formulario{
+    display: grid;
+    justify-content: space-around;
+    margin: 80px 0;
+}
+
+.formulario form{
+    max-width: 70%;
+    background-color: #022ea8;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 20px;
+    padding: 60px;
+    margin: 40px;
+}
+
+.formulario h2 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #faf7f7;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 32px 0;
+}

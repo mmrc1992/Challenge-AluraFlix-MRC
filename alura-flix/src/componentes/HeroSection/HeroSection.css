@@ -1,0 +1,149 @@
+.hero-section {
+    background-color: #262626;
+    color: #FFF;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero-header h1 {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    color: #862aff;
+    font-style: oblique;
+    font-size: 48px;
+}
+
+.add-video-btn {
+    background-color: #5302bd;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-video-btn:hover {
+    background-color: #862aff;
+}
+
+.hero-description {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #CCC;
+    font-family: Montserrat, sans-serif;
+}
+
+.hero-description:hover {
+    color: #FFF;
+    transform: scale(1.3);
+}
+
+.hero-description a {
+    color: #CCC;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hero-description a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.hero-features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature {
+    flex: 1;
+    background-color: #1A1A1A;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    margin: 0 0 10px 0;
+    color: #862aff;
+    font-family: Montserrat, sans-serif;
+}
+
+.feature p {
+    color: #999;
+    margin-bottom: 15px;
+    font-family: Montserrat, sans-serif;
+}
+
+.feature-action {
+    margin-top: auto;
+}
+
+.feature:hover {
+    background-color: #080808;
+    transform: scale(1.05);
+    border: 1px solid #862aff;
+}
+
+.hero-actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.toggle-form-btn {
+    background-color: #FF8C2A;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-form-btn:hover {
+    background-color: #FFA500;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
+    .hero-features {
+        flex-direction: column;
+    }
+}

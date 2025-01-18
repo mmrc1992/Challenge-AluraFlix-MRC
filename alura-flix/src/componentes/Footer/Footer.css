@@ -1,0 +1,50 @@
+.footer {
+    background-color: #262626;
+    background-size: cover;
+    display: flex; /* Usamos flexbox para alinear elementos */
+    justify-content: space-between; /* Espaciamos los elementos hacia los extremos */
+    align-items: center; /* Alineamos verticalmente los elementos */
+    padding: 20px 40px; /* Ajusta según tu diseño */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer p {
+    color: #4ca0ff;
+    font-size: 14px;
+    font-style: italic;
+    margin: 0; /* Elimina padding/margin adicional que afecta la alineación */
+    text-align: left; /* Centra el texto dentro de su espacio */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-alura  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 0px 20px;
+    width: 20%;
+    height: 20%;
+    border-radius: 100px;
+    right: 100px;
+    cursor: pointer; /* Añade interacción visual para los íconos */
+    transition: transform 0.2s ease-in-out; /* Efecto de hover */
+}
+
+.redes-sociales {
+    display: flex; /* Alinea los íconos horizontalmente */
+    gap: 20px; /* Espaciado entre íconos */
+    align-items: center;
+}
+
+.linkedin, .github {
+    width: 24px;
+    filter: brightness(1) saturate(4);
+    cursor: pointer; /* Añade interacción visual para los íconos */
+    transition: transform 0.2s ease-in-out; /* Efecto de hover */
+}
+
+.linkedin:hover, .github:hover, .logo-alura:hover {
+    transform: scale(1.2); /* Efecto de aumento al pasar el mouse */
+}

@@ -1,0 +1,35 @@
+.campo-texto {
+    margin: 24px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.campo-texto label {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #faf7f7;
+}
+
+.campo-texto input {
+    width: 100%;
+    background-color: #022ea8;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid #6d33d7;
+    padding: 30px 20px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    color: #ffffff;
+    border-radius:10px;
+}
+
+.campo-texto input:hover {
+    border: 2px solid #6278F7;
+}
+
+.campo-texto input::placeholder {
+    color: #faf7f7;
+    font-weight: 100;
+}
