@@ -4,16 +4,39 @@
     {
       "src": "package.json",
       "use": "@vercel/static-build",
-      "config": { 
-        "distDir": "dist",
-        "buildCommand": "npx vite build"
+      "config": {
+        "distDir": "dist"
       }
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
-  ],
-  "engines": {
-    "node": "18.x"
-  }
+    {
+      "src": "/assets/(.*)",
+      "headers": {
+        "Cache-Control": "max-age=31536000, immutable"
+      },
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/img/(.*)",
+      "headers": {
+        "Cache-Control": "max-age=31536000, public"
+      },
+      "dest": "/img/$1"
+    },
+    {
+      "src": "/src/(.*)",
+      "headers": {
+        "Content-Type": "application/javascript"
+      },
+      "dest": "/src/$1"
+    },
+    {
+      "src": "/(.*)",
+      "headers": {
+        "Cache-Control": "no-cache, no-store, must-revalidate"
+      },
+      "dest": "/index.html"
+    }
+  ]
 }

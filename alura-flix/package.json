@@ -1,16 +1,16 @@
 {
-  "name": "org",
+  "name": "alura-flix",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "engines": {
     "node": ">=18.0.0"
   },
   "scripts": {
     "dev": "vite",
-    "build": "bash -c 'npx vite build'",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "vercel-build": "vite build"
   },
   "dependencies": {
     "hex-to-rgba": "^2.0.1",
