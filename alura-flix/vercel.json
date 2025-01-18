@@ -12,5 +12,8 @@
   ],
   "routes": [
     { "src": "/(.*)", "dest": "/index.html" }
-  ]
+  ],
+  "engines": {
+    "node": "18.x"
+  }
 }
