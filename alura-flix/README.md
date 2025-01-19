@@ -17,6 +17,8 @@ AluraFlix es una aplicación web desarrollada en React que permite gestionar y v
 
 ## Tecnologías Utilizadas
 - Vite + React
+- Node
+- Vercel
 - CSS Grid y Flexbox
 - Montserrat (Fuente tipográfica)
 
