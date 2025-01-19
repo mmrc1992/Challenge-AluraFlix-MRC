@@ -111,11 +111,20 @@
     color: #ff4444;
 }
 
+@media (max-width: 1024px) {
+    .card {
+        width: calc(50% - 32px);
+        margin: 16px;
+    }
+}
+
 @media (max-width: 768px) {
     .card {
-        max-width: 100%;
+        width: 100%;
+        max-width: 350px;
+        margin: 16px 0;
     }
-    
+
     .card-content {
         padding: 15px;
     }
@@ -126,5 +135,27 @@
     
     .card-content p {
         font-size: 0.85rem;
+    }
+
+    .card-actions {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        border-radius: 10px;
+    }
+
+    .card-content {
+        padding: 12px;
+    }
+
+    .card-content h4 {
+        font-size: 1rem;
+    }
+
+    .card-actions {
+        gap: 8px;
     }
 }
