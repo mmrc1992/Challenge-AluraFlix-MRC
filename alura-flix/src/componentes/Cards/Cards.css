@@ -1,12 +1,13 @@
 .card {
     width: 100%;
-    max-width: 350px;
+    width: 400px;
     background-color: #2A2A2A;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    justify-content: space-evenly;
 }
 
 .card:hover {
@@ -96,12 +97,7 @@
 }
 
 .card-category {
-    position: absolute;
-    padding: 5px 10px;
-    border-radius: 15px;
-    color: white;
-    font-size: 0.8rem;
-    font-weight: 500;
+    display: none;
 }
 
 .eliminar {

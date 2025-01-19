@@ -195,7 +195,7 @@ function App() {
 
     {
       id: uuidv4(),
-      categoria: "Ux y Diseño",
+      categoria: "UX y Diseño",
       descripcion: "¿Aún no sabes como utilizar Figma y quieres aprender desde cero?",
       imagen: "https://i.ytimg.com/vi/Y_6R3XTA2go/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC9NG_FhXIvJ-pvDP3rcOGoceVmKg",
       titulo: "Aprendiendo a utilizar Figma #AluraTips",
@@ -204,7 +204,7 @@ function App() {
 
     {
       id: uuidv4(),
-      categoria: "Ux y Diseño",
+      categoria: "UX y Diseño",
       descripcion: "¿Cómo un desarrollador Front End utiliza el Figma? ",
       imagen: "https://i.ytimg.com/vi/UuAX5azcvDQ/maxresdefault.jpg",
       titulo: "¿Cómo un desarrollador Front End utiliza el Figma? #AluraMás",
