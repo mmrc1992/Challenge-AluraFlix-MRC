@@ -38,6 +38,7 @@ const Cards = (props) => {
             className="card"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            aria-label={`Tarjeta de video: ${titulo}`}
         >
             <div className="card-header" style={{ backgroundColor: colorPrimario }}>
                 <a href={video} target="_blank" rel="noopener noreferrer">
@@ -49,10 +50,11 @@ const Cards = (props) => {
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
+                                aria-label={`Vista previa de ${titulo}`}
                             />
                         </div>
                     ) : (
-                        <img src={imagen || `/default-thumbnail.jpg`} alt={titulo} />
+                        <img src={imagen || `/default-thumbnail.jpg`} alt={`Imagen de ${titulo}`} aria-label={`Vista previa de ${titulo}`} />
                     )}
                 </a>
             </div>
@@ -63,19 +65,33 @@ const Cards = (props) => {
                     <button 
                         className={`action-btn favorite ${isFavorite ? 'active' : ''}`}
                         onClick={handleFavorite}
+                        aria-label={isFavorite ? 'Quitar de favoritos' : 'Añadir a favoritos'}
                     >
                         <span className="material-icons">
                             {isFavorite ? 'favorite' : 'favorite_border'}
                         </span>
                     </button>
-                    <button className="action-btn like" onClick={handleLike}>
+                    <button 
+                        className="action-btn like" 
+                        onClick={handleLike}
+                        aria-label={`Me gusta (${likes} likes)`}
+                    >
                         <span className="material-icons">thumb_up</span>
                         <span className="like-count">{likes}</span>
                     </button>
-                    <button className="action-btn share" onClick={handleShare}>
+                    <button 
+                        className="action-btn share" 
+                        onClick={handleShare}
+                        aria-label="Compartir video"
+                    >
                         <span className="material-icons">share</span>
                     </button>
-                    <RiDeleteBinLine className="eliminar" alt="Eliminar video" onClick={() => props.eliminarCard(titulo)}/>
+                    <RiDeleteBinLine 
+                        className="eliminar" 
+                        alt="Eliminar video" 
+                        onClick={() => props.eliminarCard(titulo)} 
+                        aria-label="Eliminar video"
+                    />
                 </div>
             </div>
             <div className="card-category" style={{ backgroundColor: colorPrimario }}>
