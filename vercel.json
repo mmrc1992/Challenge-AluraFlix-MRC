@@ -4,7 +4,7 @@
     {
       "src": "alura-flix/package.json",
       "use": "@vercel/static-build",
-      "config": { 
+      "config": {
         "distDir": "dist",
         "buildCommand": "npm run build"
       }
