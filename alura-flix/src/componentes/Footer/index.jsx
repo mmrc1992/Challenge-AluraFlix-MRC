@@ -1,5 +1,7 @@
 import React from 'react';
 import "./Footer.css"
+import linkedinLogo from '/linkedin.png';
+import githubLogo from '/github.png';
 
 function Footer() {
     return (
@@ -13,10 +15,10 @@ function Footer() {
 
             <div className="redes-sociales">
                 <a href="https://www.linkedin.com/in/micaela-roig-courtis/" target="_blank" rel="noopener noreferrer">
-                    <img className="linkedin" src="linkedin.png" alt="LinkedIn" />
+                    <img className="linkedin" src={linkedinLogo} alt="LinkedIn" />
                 </a>
                 <a href="https://github.com/mmrc1992" target="_blank" rel="noopener noreferrer">
-                    <img className="github" src="github.png" alt="GitHub" />
+                    <img className="github" src={githubLogo} alt="GitHub" />
                 </a>
             </div>
         </footer>
