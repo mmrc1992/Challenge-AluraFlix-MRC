@@ -4,7 +4,7 @@ import "./Footer.css"
 function Footer() {
     return (
         <footer className="footer">
-            <p>© 2025 Desarrollado por Micaela Roig Courtis</p>
+            <p> 2025 Desarrollado por Micaela Roig Courtis</p>
             <div className="alura">
                 <a href="https://www.aluracursos.com/" target="_blank" rel="noopener noreferrer">
                     <img className="logo-alura" src="/img/icono-alura.png" alt='Logo Alura' />
@@ -13,10 +13,10 @@ function Footer() {
 
             <div className="redes-sociales">
                 <a href="https://www.linkedin.com/in/micaela-roig-courtis/" target="_blank" rel="noopener noreferrer">
-                    <img className="linkedin" src="/public/linkedin.png" alt="LinkedIn" />
+                    <img className="linkedin" src="/linkedin.png" alt="LinkedIn" />
                 </a>
                 <a href="https://github.com/mmrc1992" target="_blank" rel="noopener noreferrer">
-                    <img className="github" src="/public/github.png" alt="GitHub" />
+                    <img className="github" src="/github.png" alt="GitHub" />
                 </a>
             </div>
         </footer>
