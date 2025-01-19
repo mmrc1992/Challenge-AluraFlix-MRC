@@ -15,10 +15,10 @@ function Footer() {
 
             <div className="redes-sociales">
                 <a href="https://www.linkedin.com/in/micaela-roig-courtis/" target="_blank" rel="noopener noreferrer">
-                    <img className="linkedin" src={linkedinLogo} alt="LinkedIn" />
+                    <img className="linkedin" src="/img/linkedin.png" alt="LinkedIn" />
                 </a>
                 <a href="https://github.com/mmrc1992" target="_blank" rel="noopener noreferrer">
-                    <img className="github" src={githubLogo} alt="GitHub" />
+                    <img className="github" src="/img/github.png" alt="GitHub" />
                 </a>
             </div>
         </footer>
